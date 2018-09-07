@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Treasure_Hunt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBk-oh-kMw" customClass="GradientView" customModule="Treasure_Hunt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SGn-2L-3rm">
+                                        <rect key="frame" x="30" y="229" width="315" height="75"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xVQ-DR-VNd">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.64233141447368425" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSC-rl-XOV">
+                                                <rect key="frame" x="0.0" y="45" width="315" height="30"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.64313322368421055" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Treasure Hunt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8r-4o-5mI">
+                                        <rect key="frame" x="25" y="67" width="324" height="125"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="37"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDY-En-E3I" customClass="RoundedButton" customModule="Treasure_Hunt" customModuleProvider="target">
+                                        <rect key="frame" x="69" y="330" width="237" height="41"/>
+                                        <color key="backgroundColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l8L-j1-7Q4">
+                                        <rect key="frame" x="69" y="414" width="237" height="98"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0E-Bu-Mli" customClass="RoundedButton" customModule="Treasure_Hunt" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="237" height="44"/>
+                                                <color key="backgroundColor" red="0.29109984636306763" green="0.39889860153198242" blue="0.67846304178237915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="BmM-nR-U8D"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                <state key="normal" title="Login with Facebook">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWN-DP-yq8" customClass="RoundedButton" customModule="Treasure_Hunt" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="54" width="237" height="44"/>
+                                                <color key="backgroundColor" red="0.84689980745315552" green="0.31558659672737122" blue="0.25093263387680054" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="k5Y-xj-U7F"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                <state key="normal" title="Login with Google">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yDY-En-E3I" firstAttribute="top" secondItem="SGn-2L-3rm" secondAttribute="bottom" constant="26" id="Aem-Ul-H7S"/>
+                                    <constraint firstItem="yDY-En-E3I" firstAttribute="width" secondItem="B0E-Bu-Mli" secondAttribute="width" id="Hwt-Ke-RAF"/>
+                                    <constraint firstAttribute="trailing" secondItem="SGn-2L-3rm" secondAttribute="trailing" constant="30" id="M0x-dc-fE7"/>
+                                    <constraint firstItem="l8L-j1-7Q4" firstAttribute="top" secondItem="SGn-2L-3rm" secondAttribute="bottom" constant="110" id="OIH-Af-xXx"/>
+                                    <constraint firstItem="SGn-2L-3rm" firstAttribute="top" secondItem="Z8r-4o-5mI" secondAttribute="bottom" constant="37" id="ahI-oX-Oot"/>
+                                    <constraint firstAttribute="trailing" secondItem="l8L-j1-7Q4" secondAttribute="trailing" constant="69" id="gAO-RA-GTS"/>
+                                    <constraint firstItem="Z8r-4o-5mI" firstAttribute="top" secondItem="YBk-oh-kMw" secondAttribute="top" constant="67" id="hdp-aZ-gRB"/>
+                                    <constraint firstItem="SGn-2L-3rm" firstAttribute="leading" secondItem="YBk-oh-kMw" secondAttribute="leading" constant="30" id="jdc-aM-TDd"/>
+                                    <constraint firstItem="yDY-En-E3I" firstAttribute="centerX" secondItem="YBk-oh-kMw" secondAttribute="centerX" id="joO-v1-dY7"/>
+                                    <constraint firstItem="l8L-j1-7Q4" firstAttribute="leading" secondItem="YBk-oh-kMw" secondAttribute="leading" constant="69" id="xRt-88-8Wy"/>
+                                    <constraint firstItem="Z8r-4o-5mI" firstAttribute="centerX" secondItem="YBk-oh-kMw" secondAttribute="centerX" id="zoo-8l-KoU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YBk-oh-kMw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6yF-ny-1VF"/>
+                            <constraint firstItem="YBk-oh-kMw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SFC-4I-k6v"/>
+                            <constraint firstItem="YBk-oh-kMw" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="tPV-qw-WPB"/>
+                            <constraint firstItem="YBk-oh-kMw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tXT-Am-kXM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
